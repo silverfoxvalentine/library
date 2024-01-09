@@ -1,0 +1,55 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+#read {
+    display: inline;
+}
+
+.card {
+    padding: 15px;
+    background-color:lavender;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: max-content;
+    font-size: 18px;
+}
+
+.card > div {
+    border-bottom: 1px solid black;
+}
+
+.header {
+    display: flex;
+    gap: 15px;
+    padding: 10px 30px;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.library {
+    display: flex;
+    gap: 15px;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+}
+
+
+button {
+    display: block;
+    font-size: 15px; 
+    background-color: aliceblue;
+}
+
+span {
+    display: inline;
+}
