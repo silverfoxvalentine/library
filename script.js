@@ -22,13 +22,15 @@ const myLibrary = [
 
 add.addEventListener('click', () => dialog.showModal());
 
-function Book(title, author, read, pages) {
+class Book {
+    constructor(title, author, read, pages){
     this.title = title;
     this.author = author;
     this.read = read;
     this.pages = pages;
+    }
     
-    this.info = function() {
+    info = function() {
         return `${title} by ${author}`
     }
 }
@@ -68,10 +70,9 @@ let addBookCard = function(item) {
         if (item.read) {
             item.read = false;
             cardRead.textContent ='Not Read'
-        }
-        else {
+        } else {
             item.read = true;
-        cardRead.textContent = 'Read'}
+            cardRead.textContent = 'Read'}
     })
 
     let remBut = document.createElement('button')
